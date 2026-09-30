@@ -62,12 +62,12 @@ let tot_temperature_in_celsius =
     day25TempC + day26TempC + day27TempC + day28TempC +
     day29TempC + day30TempC
 
-let tot_temperature_in_fahrenheit = (tot_temperature_in_celsius * 9 / 5) + 32
-//! Start the calculation of the average temperatures
-//* Call the variables: avg_temperature_in_fahrenheit and avg_temperature_in_celsius
 
-let avg_temperature_in_fahrenheit = tot_temperature_in_fahrenheit / 30
+
 let avg_temperature_in_celsius = tot_temperature_in_celsius / 30
+let avg_temperature_in_fahrenheit = (avg_temperature_in_celsius * 9 / 5) + 32
+let tot_temperature_in_fahrenheit = avg_temperature_in_fahrenheit * 30
+
 
 console.log(avg_temperature_in_fahrenheit)
 //! Console.log the results for your own inspection if you'd like
